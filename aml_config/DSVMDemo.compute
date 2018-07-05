@@ -1,0 +1,8 @@
+address: dsvmdemo.westus2.cloudapp.azure.com
+baseDockerImage: microsoft/mmlspark:plus-gpu-0.9.9
+nvidiaDocker: true
+nativeSharedDirectory: ~/.azureml/share/
+password: AzureMlSecret=DSVMDemo#wtam#16559b3e6f61475ead946ed3be73ebfd
+sharedVolumes: true
+type: remotedocker
+username: wtam

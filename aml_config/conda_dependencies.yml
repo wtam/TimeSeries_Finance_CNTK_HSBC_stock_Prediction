@@ -21,12 +21,16 @@ dependencies:
   - ipykernel=4.6.1
 
   # Add GPU version of tensorflow
-  - tensorflow-gpu
-  - tensorflow
+  - tensorflow-gpu==1.8.0
+  - tensorflow==1.8.0
   #replace keras below to keras-gpu resolve this TypeError: while_loop() got an unexpected keyword argument 'maximum_iterations'
-  - keras-gpu
+  - keras-gpu==2.1.5
+  
+  # To avoid pip10 PyYAML 3.13 uninstall issue due to distutils installed project 
+  - pip==9.0.3
 
   - pip:
+    
     # The API for Azure Machine Learning Model Management Service.
     # Details: https://github.com/Azure/Machine-Learning-Operationalization
     - azure-ml-api-sdk==0.1.0a11
@@ -36,7 +40,7 @@ dependencies:
     - https://azuremldownloads.blob.core.windows.net/wheels/latest/azureml.assets-1.0.0-py3-none-any.whl?sv=2016-05-31&si=ro-2017&sr=c&sig=xnUdTm0B%2F%2FfknhTaRInBXyu2QTTt8wA3OsXwGVgU%2BJk%3D
 
     - pandas_datareader
-    - fix_yahoo_finance
+    - fix_yahoo_finance==0.0.21
     #- keras
     - sklearn
     - matplotlib
@@ -52,3 +56,4 @@ dependencies:
 
     # use horovod framework for Distributed Tensorflow https://github.com/uber/horovod
     #- horovod (build fail as I rmoved the openmpi folder outside the project due to limitation of the 25M/project
+    

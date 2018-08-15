@@ -1,8 +1,9 @@
 address: dsvmmwr2ii6hetoh4.australiaeast.cloudapp.azure.com
-baseDockerImage: microsoft/mmlspark:plus-gpu-0.9.9     
-nvidiaDocker: true
+baseDockerImage: 'microsoft/mmlspark:plus-gpu-0.9.9 '
 nativeSharedDirectory: ~/.azureml/share/
-password: AzureMlSecret=DLVMDemo#wtam#2511aae1d62040afaf7b7b11b18c7165
+password: 'AzureMlSecret=DLVMDemo#wtam#b4143f0afb804c21aaa3f3f5876525fd'
 sharedVolumes: true
 type: remotedocker
+userManagedEnvironment: false
 username: wtam
+nvidiaDocker: true
